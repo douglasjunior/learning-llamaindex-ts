@@ -1,0 +1,36 @@
+{
+  "name": "learning-llamaindex-ts",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Douglas Nassif Roma Junior",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint . --cache",
+    "tsc": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@llamaindex/clip": "^0.0.59",
+    "@llamaindex/huggingface": "^0.1.13",
+    "@llamaindex/openai": "^0.4.3",
+    "@llamaindex/qdrant": "^0.1.19",
+    "@llamaindex/readers": "^3.1.7",
+    "@llamaindex/workflow": "^1.1.7",
+    "dotenv": "^16.5.0",
+    "llamaindex": "^0.11.6"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^4.4.1",
+    "@types/node": "^22.15.29",
+    "eslint": "^9.28.0",
+    "eslint-plugin-import": "^2.31.0",
+    "globals": "^16.2.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.1"
+  }
+}
