@@ -421,13 +421,12 @@
   resolved "https://registry.yarnpkg.com/@llama-flow/core/-/core-0.4.3.tgz#81f41b67b3b2abbc29a05e51401db15db3c979b0"
   integrity sha512-fxvuCO0Jpa/WZ/NFk2HCpKwjE4bwpHAIFyW/MC0L+gKGKj8DMYjJla6WVhADU35EUnxdpf9ZYJoN32yPrJUMMQ==
 
-"@llamaindex/clip@^0.0.59":
+"@llamaindex/clip@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/clip@2017":
   version "0.0.59"
-  resolved "https://registry.yarnpkg.com/@llamaindex/clip/-/clip-0.0.59.tgz#9223a2c5c4c1ddd28cd2eb85b228ad1a04591c53"
-  integrity sha512-EZLsrXgMcQANdlFH524IqcDQ6Lw4LhfrNxRliKq0VXGAQ3/qjXZoIEKdXSPuNDEyvR0OCL3ECSi3JkCipQezzA==
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/clip@2017#a71bee1783f0b30da591c4dc0eac0a544a88d4eb"
   dependencies:
     "@huggingface/transformers" "^3.5.0"
-    "@llamaindex/openai" "0.4.3"
+    "@llamaindex/openai" "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/openai@f7124e6fbf40d7500e2fad749a4d870d41246203"
 
 "@llamaindex/cloud@4.0.13":
   version "4.0.13"
@@ -437,34 +436,49 @@
     p-retry "^6.2.1"
     zod "^3.25.7"
 
-"@llamaindex/core@0.6.9":
-  version "0.6.9"
-  resolved "https://registry.yarnpkg.com/@llamaindex/core/-/core-0.6.9.tgz#d6ac7bd82b41ae230e49d3aa904b482186f2a8d5"
-  integrity sha512-w8SMrcj35/mtB9z7n0hnq9idxgmtHBU8ZNFzde/94mysRnqgWjc2io+qIVOrCrWIokLVVcTulYD7EeiewPtC5g==
+"@llamaindex/cloud@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/cloud@f7124e6fbf40d7500e2fad749a4d870d41246203":
+  version "4.0.13"
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/cloud@f7124e6fbf40d7500e2fad749a4d870d41246203#7db452e7f7e0e40bb5bdcf612e154d01d8afe5b0"
   dependencies:
-    "@llamaindex/env" "0.1.30"
+    p-retry "^6.2.1"
+    zod "^3.25.7"
+
+"@llamaindex/core@0.6.9", "@llamaindex/core@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/core@2017":
+  version "0.6.9"
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/core@2017#e87fa4abe0cbcd2cae38a96ab8812e705511126b"
+  dependencies:
+    "@llamaindex/env" "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/env@f7124e6fbf40d7500e2fad749a4d870d41246203"
     "@types/node" "^22.9.0"
     magic-bytes.js "^1.10.0"
     zod "^3.23.8"
     zod-to-json-schema "^3.23.3"
 
-"@llamaindex/env@0.1.30":
+"@llamaindex/core@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/core@f7124e6fbf40d7500e2fad749a4d870d41246203":
+  version "0.6.9"
+  uid e87fa4abe0cbcd2cae38a96ab8812e705511126b
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/core@f7124e6fbf40d7500e2fad749a4d870d41246203#e87fa4abe0cbcd2cae38a96ab8812e705511126b"
+  dependencies:
+    "@llamaindex/env" "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/env@f7124e6fbf40d7500e2fad749a4d870d41246203"
+    "@types/node" "^22.9.0"
+    magic-bytes.js "^1.10.0"
+    zod "^3.23.8"
+    zod-to-json-schema "^3.23.3"
+
+"@llamaindex/env@0.1.30", "@llamaindex/env@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/env@f7124e6fbf40d7500e2fad749a4d870d41246203":
   version "0.1.30"
-  resolved "https://registry.yarnpkg.com/@llamaindex/env/-/env-0.1.30.tgz#5576df71e5f8cb51e531ca2e1745797889d928df"
-  integrity sha512-y6kutMcCevzbmexUgz+HXf7KiZemzAoFEYSjAILfR+cG6FmYSF8XvLbGOB34Kx8mlRi7EI8rZXpezJ5qCqOyZg==
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/env@f7124e6fbf40d7500e2fad749a4d870d41246203#5576df71e5f8cb51e531ca2e1745797889d928df"
   dependencies:
     "@aws-crypto/sha256-js" "^5.2.0"
     js-tiktoken "^1.0.12"
     pathe "^1.1.2"
 
-"@llamaindex/huggingface@^0.1.13":
+"@llamaindex/huggingface@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/huggingface@2017":
   version "0.1.13"
-  resolved "https://registry.yarnpkg.com/@llamaindex/huggingface/-/huggingface-0.1.13.tgz#5defba044ad4b14ef1f8f10a5c6bcde69a690fcb"
-  integrity sha512-jHsafi4h/C9ODqN4JNGX9ZzSQ3VIAzIrlo2yiOLpGSQJ7Kl8BBDDpcMd+RmJUeYhGgsFBOhjry2+stwwMcEvzA==
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/huggingface@2017#1b6a5a1e2720947752d78cc2d74f59aa2b000cf4"
   dependencies:
     "@huggingface/inference" "^2.8.1"
     "@huggingface/transformers" "^3.5.0"
-    "@llamaindex/openai" "0.4.3"
+    "@llamaindex/openai" "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/openai@f7124e6fbf40d7500e2fad749a4d870d41246203"
 
 "@llamaindex/node-parser@2.0.9":
   version "2.0.9"
@@ -473,34 +487,50 @@
   dependencies:
     html-to-text "^9.0.5"
 
-"@llamaindex/openai@0.4.3", "@llamaindex/openai@^0.4.3":
+"@llamaindex/node-parser@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/node-parser@f7124e6fbf40d7500e2fad749a4d870d41246203":
+  version "2.0.9"
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/node-parser@f7124e6fbf40d7500e2fad749a4d870d41246203#5acb6b972933ff04b3ffe9a4c25b0a101fae249c"
+  dependencies:
+    html-to-text "^9.0.5"
+
+"@llamaindex/openai@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/openai@2017":
   version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@llamaindex/openai/-/openai-0.4.3.tgz#3d31b16654a485e10e622427a557c1af8b5f6738"
-  integrity sha512-2RNwf2u4fu0OFYmSCUk2nVijJlTHFvJP50KS/SnSaas7xsK9brfemS51aX4Mc7TavbXoaDKldLzVY3mkpXXgxg==
+  uid "4f303d10f2645f99c85f8f6d45074693050ebec1"
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/openai@2017#4f303d10f2645f99c85f8f6d45074693050ebec1"
   dependencies:
     openai "^4.102.0"
 
-"@llamaindex/qdrant@^0.1.19":
+"@llamaindex/openai@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/openai@f7124e6fbf40d7500e2fad749a4d870d41246203":
+  version "0.4.3"
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/openai@f7124e6fbf40d7500e2fad749a4d870d41246203#4f303d10f2645f99c85f8f6d45074693050ebec1"
+  dependencies:
+    openai "^4.102.0"
+
+"@llamaindex/qdrant@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/qdrant@2017":
   version "0.1.19"
-  resolved "https://registry.yarnpkg.com/@llamaindex/qdrant/-/qdrant-0.1.19.tgz#1b0f528fd7e18ae94d35415a225e16fd78be3e18"
-  integrity sha512-QWXW0HywLiTzB5lcQf8oj9YnLPB9XhWYP71ehR6sewA17Sfx2URZ7bmSCN+SQMqB5n80tR3r9iHl/9YXXZJoHg==
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/qdrant@2017#102187d80bfb5cadd2cea8bd024cbfb051363b1b"
   dependencies:
     "@qdrant/js-client-rest" "^1.14.0"
 
-"@llamaindex/readers@^3.1.7":
+"@llamaindex/readers@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/readers@2017":
   version "3.1.7"
-  resolved "https://registry.yarnpkg.com/@llamaindex/readers/-/readers-3.1.7.tgz#7cf2cfde6a6d412518d99878d3ee9f01d5d210da"
-  integrity sha512-+YfJX+xyhQoh91SaW98GBkZ7uOClq/mFwOUL3TUSJ+DClO9uo8fQmBCM+A8YPm02mjMSLOciqFv/dvTvl7sxhQ==
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/readers@2017#6917724d4a805b9cafe649ab0de8126df013652f"
   dependencies:
     "@discoveryjs/json-ext" "^0.6.1"
     csv-parse "^5.5.6"
     mammoth "^1.7.2"
     unpdf "^0.12.1"
 
-"@llamaindex/workflow@1.1.7", "@llamaindex/workflow@^1.1.7":
+"@llamaindex/workflow@1.1.7", "@llamaindex/workflow@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/workflow@2017":
   version "1.1.7"
-  resolved "https://registry.yarnpkg.com/@llamaindex/workflow/-/workflow-1.1.7.tgz#cb7f046033d814e9c5ade307efd4258c0decdae5"
-  integrity sha512-OcCcaYyqOb0iuPTd+KZtldaUc2mspb3KUrHIgAaH/Jshgm1bIx40fLuskNt/XIi2pf3Lvi0YPgti47ieqzAn6A==
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/workflow@2017#6f80f8f1a26391b8df0c10fe3cc0b95f6f95d6ce"
+  dependencies:
+    "@llama-flow/core" "^0.4.3"
+
+"@llamaindex/workflow@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/workflow@f7124e6fbf40d7500e2fad749a4d870d41246203":
+  version "1.1.7"
+  uid "6f80f8f1a26391b8df0c10fe3cc0b95f6f95d6ce"
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/workflow@f7124e6fbf40d7500e2fad749a4d870d41246203#6f80f8f1a26391b8df0c10fe3cc0b95f6f95d6ce"
   dependencies:
     "@llama-flow/core" "^0.4.3"
 
@@ -2328,6 +2358,20 @@ llamaindex@^0.11.6:
     "@types/lodash" "^4.17.7"
     "@types/node" "^22.9.0"
     ajv "^8.17.1"
+    lodash "^4.17.21"
+    magic-bytes.js "^1.10.0"
+
+"llamaindex@https://pkg.pr.new/run-llama/LlamaIndexTS/llamaindex@2017":
+  version "0.11.6"
+  resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/llamaindex@2017#5a36f025792bc20cb6a27a950e9a679d38149d90"
+  dependencies:
+    "@llamaindex/cloud" "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/cloud@f7124e6fbf40d7500e2fad749a4d870d41246203"
+    "@llamaindex/core" "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/core@f7124e6fbf40d7500e2fad749a4d870d41246203"
+    "@llamaindex/env" "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/env@f7124e6fbf40d7500e2fad749a4d870d41246203"
+    "@llamaindex/node-parser" "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/node-parser@f7124e6fbf40d7500e2fad749a4d870d41246203"
+    "@llamaindex/workflow" "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/workflow@f7124e6fbf40d7500e2fad749a4d870d41246203"
+    "@types/lodash" "^4.17.7"
+    "@types/node" "^22.9.0"
     lodash "^4.17.21"
     magic-bytes.js "^1.10.0"
 

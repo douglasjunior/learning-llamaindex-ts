@@ -14,14 +14,15 @@
     "tsc": "tsc --noEmit"
   },
   "dependencies": {
-    "@llamaindex/clip": "^0.0.59",
-    "@llamaindex/huggingface": "^0.1.13",
-    "@llamaindex/openai": "^0.4.3",
-    "@llamaindex/qdrant": "^0.1.19",
-    "@llamaindex/readers": "^3.1.7",
-    "@llamaindex/workflow": "^1.1.7",
+    "@llamaindex/clip": "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/clip@2017",
+    "@llamaindex/core": "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/core@2017",
+    "@llamaindex/huggingface": "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/huggingface@2017",
+    "@llamaindex/openai": "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/openai@2017",
+    "@llamaindex/qdrant": "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/qdrant@2017",
+    "@llamaindex/readers": "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/readers@2017",
+    "@llamaindex/workflow": "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/workflow@2017",
     "dotenv": "^16.5.0",
-    "llamaindex": "^0.11.6"
+    "llamaindex": "https://pkg.pr.new/run-llama/LlamaIndexTS/llamaindex@2017"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^4.4.1",
