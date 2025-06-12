@@ -1,17 +1,18 @@
 import { ClipEmbedding } from '@llamaindex/clip';
 import { openai } from '@llamaindex/openai';
+import { QdrantVectorStore } from '@llamaindex/qdrant';
 import { ImageReader } from '@llamaindex/readers/image';
 import dotenv from 'dotenv';
-import { extractText, getResponseSynthesizer, Settings, SimpleVectorStore, storageContextFromDefaults, VectorStoreIndex } from 'llamaindex';
+import { extractText, getResponseSynthesizer, Settings, storageContextFromDefaults, VectorStoreIndex } from 'llamaindex';
 
 import path from 'node:path';
 
 dotenv.config();
 
-const { OPENAI_API_KEY } = process.env;
+const { OPENAI_API_KEY, QDRANT_URL } = process.env;
 
-const dataDir = path.resolve(import.meta.dirname, '../data');
-const storageDir = path.resolve(import.meta.dirname, '../storage');
+const dataDir = path.resolve(__dirname, '../data');
+const storageDir = path.resolve(__dirname, '../storage');
 const filesImage = [
   path.join(dataDir, 'image-1.png'),
   path.join(dataDir, 'image-2.png'),
@@ -44,13 +45,24 @@ Settings.callbackManager.on('retrieve-end', (event) => {
 });
 
 async function getStorageContext() {
+  //   return await storageContextFromDefaults({
+  //   persistDir: storageDir,
+  //   vectorStores: {
+  //     IMAGE: await SimpleVectorStore.fromPersistDir(
+  //       path.join(storageDir, 'images'),
+  //       new ClipEmbedding(),
+  //     ),
+  //   },
+  // });
+  const vectorStoreImage = new QdrantVectorStore({
+    url: QDRANT_URL,
+    collectionName: 'image-collection',
+    embeddingModel: new ClipEmbedding(),
+  });
   return await storageContextFromDefaults({
     persistDir: storageDir,
     vectorStores: {
-      IMAGE: await SimpleVectorStore.fromPersistDir(
-        path.join(storageDir, 'images'),
-        new ClipEmbedding(),
-      ),
+      IMAGE: vectorStoreImage,
     },
   });
 }
@@ -62,7 +74,6 @@ async function main() {
     documents.push(...(await imageReader.loadData(file)));
   }
   const index = await VectorStoreIndex.fromDocuments(documents, {
-    nodes: [],
     storageContext,
   });
 

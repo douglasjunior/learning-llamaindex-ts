@@ -5,7 +5,6 @@
   "author": "Douglas Nassif Roma Junior",
   "license": "MIT",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "tsx watch --clear-screen=false src/index.ts",
     "build": "tsc",

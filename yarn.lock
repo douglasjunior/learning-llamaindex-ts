@@ -428,14 +428,6 @@
     "@huggingface/transformers" "^3.5.0"
     "@llamaindex/openai" "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/openai@f7124e6fbf40d7500e2fad749a4d870d41246203"
 
-"@llamaindex/cloud@4.0.13":
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/@llamaindex/cloud/-/cloud-4.0.13.tgz#01f59dd81834fb6bb0fe6afb4f5b176901e72708"
-  integrity sha512-7s/LnBfJaFG/+5zZLJ+7gWJw/p0Afdz21cA5eLXIDDiJXga33ccswoQPvVODO9OvNYPdRtFGuahSnBMatUrxzg==
-  dependencies:
-    p-retry "^6.2.1"
-    zod "^3.25.7"
-
 "@llamaindex/cloud@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/cloud@f7124e6fbf40d7500e2fad749a4d870d41246203":
   version "4.0.13"
   resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/cloud@f7124e6fbf40d7500e2fad749a4d870d41246203#7db452e7f7e0e40bb5bdcf612e154d01d8afe5b0"
@@ -443,7 +435,7 @@
     p-retry "^6.2.1"
     zod "^3.25.7"
 
-"@llamaindex/core@0.6.9", "@llamaindex/core@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/core@2017":
+"@llamaindex/core@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/core@2017":
   version "0.6.9"
   resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/core@2017#e87fa4abe0cbcd2cae38a96ab8812e705511126b"
   dependencies:
@@ -464,7 +456,7 @@
     zod "^3.23.8"
     zod-to-json-schema "^3.23.3"
 
-"@llamaindex/env@0.1.30", "@llamaindex/env@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/env@f7124e6fbf40d7500e2fad749a4d870d41246203":
+"@llamaindex/env@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/env@f7124e6fbf40d7500e2fad749a4d870d41246203":
   version "0.1.30"
   resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/env@f7124e6fbf40d7500e2fad749a4d870d41246203#5576df71e5f8cb51e531ca2e1745797889d928df"
   dependencies:
@@ -479,13 +471,6 @@
     "@huggingface/inference" "^2.8.1"
     "@huggingface/transformers" "^3.5.0"
     "@llamaindex/openai" "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/openai@f7124e6fbf40d7500e2fad749a4d870d41246203"
-
-"@llamaindex/node-parser@2.0.9":
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/@llamaindex/node-parser/-/node-parser-2.0.9.tgz#81e77e944df0b12b40fb917d969c94395828bde8"
-  integrity sha512-MvUiOrZ15VoA+N1jcSY0SjZ92iEAUVfCb3AusmPCzTAYbO91lifa6Oll1KVrQl89SS3GV1yPm1WI/Fe3ViV9Yg==
-  dependencies:
-    html-to-text "^9.0.5"
 
 "@llamaindex/node-parser@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/node-parser@f7124e6fbf40d7500e2fad749a4d870d41246203":
   version "2.0.9"
@@ -521,7 +506,7 @@
     mammoth "^1.7.2"
     unpdf "^0.12.1"
 
-"@llamaindex/workflow@1.1.7", "@llamaindex/workflow@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/workflow@2017":
+"@llamaindex/workflow@https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/workflow@2017":
   version "1.1.7"
   resolved "https://pkg.pr.new/run-llama/LlamaIndexTS/@llamaindex/workflow@2017#6f80f8f1a26391b8df0c10fe3cc0b95f6f95d6ce"
   dependencies:
@@ -890,16 +875,6 @@ ajv@^6.12.4:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
-
-ajv@^8.17.1:
-  version "8.17.1"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.17.1.tgz#37d9a5c776af6bc92d7f4f9510eba4c0a60d11a6"
-  integrity sha512-B/gBuNg5SiMTrPkC+A2+cW0RszwxYmn6VYxB/inlBStS5nx6xHIt/ehKRhIMhqusl7a8LjQoZnjCs5vhwxOQ1g==
-  dependencies:
-    fast-deep-equal "^3.1.3"
-    fast-uri "^3.0.1"
-    json-schema-traverse "^1.0.0"
-    require-from-string "^2.0.2"
 
 ansi-regex@^5.0.1:
   version "5.0.1"
@@ -1669,11 +1644,6 @@ fast-levenshtein@^2.0.6:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==
 
-fast-uri@^3.0.1:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/fast-uri/-/fast-uri-3.0.6.tgz#88f130b77cfaea2378d56bf970dea21257a68748"
-  integrity sha512-Atfo14OibSv5wAp4VWNsFYE1AchQRTv9cBGWET4pZWHzYshFSS9NQI6I57rdKn9croWVMbYFbLhJ+yJvmZIIHw==
-
 fastq@^1.6.0:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.19.1.tgz#d50eaba803c8846a883c16492821ebcd2cda55f5"
@@ -2286,11 +2256,6 @@ json-schema-traverse@^0.4.1:
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz#69f6a87d9513ab8bb8fe63bdb0979c448e684660"
   integrity sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==
 
-json-schema-traverse@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz#ae7bcb3656ab77a73ba5c49bf654f38e6b6860e2"
-  integrity sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==
-
 json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
@@ -2344,22 +2309,6 @@ lie@~3.3.0:
   integrity sha512-UaiMJzeWRlEujzAuw5LokY1L5ecNQYZKfmyZ9L7wDHb/p5etKaxXhohBcrw0EYby+G/NA52vRSN4N39dxHAIwQ==
   dependencies:
     immediate "~3.0.5"
-
-llamaindex@^0.11.6:
-  version "0.11.6"
-  resolved "https://registry.yarnpkg.com/llamaindex/-/llamaindex-0.11.6.tgz#0c641e6aaf507b64edc15d362ef08008d9c881fe"
-  integrity sha512-PQG3Ws+3mgLKGrciGLai2iRfYURd7tVvHtU6GBvVaZ3mZ1i3vwRKT42FuBME2l/i7b8HLz+4QHWA92qQoYc1eA==
-  dependencies:
-    "@llamaindex/cloud" "4.0.13"
-    "@llamaindex/core" "0.6.9"
-    "@llamaindex/env" "0.1.30"
-    "@llamaindex/node-parser" "2.0.9"
-    "@llamaindex/workflow" "1.1.7"
-    "@types/lodash" "^4.17.7"
-    "@types/node" "^22.9.0"
-    ajv "^8.17.1"
-    lodash "^4.17.21"
-    magic-bytes.js "^1.10.0"
 
 "llamaindex@https://pkg.pr.new/run-llama/LlamaIndexTS/llamaindex@2017":
   version "0.11.6"
@@ -2537,15 +2486,10 @@ mkdirp@^3.0.1:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-3.0.1.tgz#e44e4c5607fb279c168241713cc6e0fea9adcb50"
   integrity sha512-+NsyUUAZDmo6YVHzL/stxSu3t9YS1iljliy3BSDrXJ/dkn1KYdmtZODGGjLcc9XLgVVpH4KshHB8XmZgMhaBXg==
 
-ms@2.1.2:
+ms@2.1.2, ms@^2.0.0, ms@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
-
-ms@^2.0.0, ms@^2.1.1:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
-  integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
 nan@^2.17.0:
   version "2.22.2"
@@ -2897,11 +2841,6 @@ regexp.prototype.flags@^1.5.4:
     get-proto "^1.0.1"
     gopd "^1.2.0"
     set-function-name "^2.0.2"
-
-require-from-string@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
-  integrity sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==
 
 resolve-from@^4.0.0:
   version "4.0.0"

@@ -58,7 +58,7 @@ async function getDocuments(filesText: string[], reader: BaseReader, vectorStore
 }
 
 async function main() {
-  const dataDir = path.resolve(import.meta.dirname, '../data');
+  const dataDir = path.resolve(__dirname, '../data');
   const filesText = [path.join(dataDir, 'CSF_Proposed_Budget_Book_June_2024_r8.pdf')];
   const filesImage = [
     path.join(dataDir, 'image-1.png'),
